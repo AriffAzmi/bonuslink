@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/custom-login', 'CustomLogin@login');
 Route::get('/bonuslink/balance', 'BonuslinkController@showBalance');
 Route::post('/bonuslink/add-points', 'BonuslinkController@addPoints');
 Route::post('/bonuslink/void-points', 'BonuslinkController@voidPoints');
